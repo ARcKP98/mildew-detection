@@ -52,3 +52,47 @@ def leaf_visualizer_body():
         st.image(diff_between_average,
                  caption='Difference between Average images')
         st.write('----')
+    if st.checkbox('Image Montage'):
+        st.info("To refresh the montage click on **Create Montage**")
+        my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
+        labels = os.listdir(my_data_dir + '/validation')
+        label_to_display = st.selectbox(
+            label="Select label", options=labels, index=0)
+        if st.button('Create Montage'):
+            image_montage(
+                dir_path=my_data_dir + '/validation',
+                label_to_display=label_to_display,  nrows=8,
+                ncols=3, figsize=(10, 25)
+                )
+        st.write('----')
+
+
+def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
+
+    labels = os.listdir(dir_path)
+    if label_to_display in labels:
+        images_list = os.listdir(dir_path+'/'+label_to_display)
+        if nrows * ncols < len(images_list):
+            img_idx = random.sample(images_list, nrows * ncols)
+        else:
+            print(f'Decrease nrow or ncols to create your montage.')
+            print(f'There are {len(images_list)} in your subset.')
+            print(f'You requested a montage with {nrows * ncols} spaces.')
+            return
+
+        list_rows = range(0, nrows)
+        list_cols = range(0, ncols)
+        plot_idx = list(itertools.product(list_rows, list_cols))
+
+        fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=figsize)
+        for x in range(0, nrows*ncols):
+            img = imread(dir_path+'/'+label_to_display+'/'+img_idx[x])
+            img_shape = img.shape
+            axes[plot_idx[x][0], plot_idx[x][1]].imshow(img)
+            axes[plot_idx[x][0], plot_idx[x][1]].set_title(
+                f'Width {img_shape[1]}px x Height {img_shape[0]}px')
+            axes[plot_idx[x][0], plot_idx[x][1]].set_xticks([])
+            axes[plot_idx[x][0], plot_idx[x][1]].set_yticks([])
+        plt.tight_layout()
+
+        st.pyplot(fig=fig)

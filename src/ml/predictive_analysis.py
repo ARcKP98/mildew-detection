@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 from tensorflow.keras.models import load_model
 from PIL import Image
+
 from src.data_management import load_pkl_file
 
 
@@ -52,7 +53,7 @@ def load_model_and_predict(my_image, version):
     pred_class = target_map[pred_proba > 0.5]
     if pred_class == target_map[0]:
         pred_proba = 1 - pred_proba
-    
+
     st.write(
         f"The predictive analysis indicates the sample leaf is: "
         f"**{pred_class.lower()}**."

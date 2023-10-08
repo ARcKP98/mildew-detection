@@ -22,7 +22,8 @@ def mildew_detector_body():
     st.write('You can upload image(s) of cherry leaves below')
 
     images_buffer = st.file_uploader(
-        'Upload your cherry leaves here:', accept_multiple_files=True, type=['png', 'jpg'])
+        'Upload your cherry leaves here:', accept_multiple_files=True,
+        type=['png', 'jpg'])
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])

@@ -1,9 +1,30 @@
 # Powdery Mildew detector in Cherry Leaves
+
+![Am I Responsive screenshot](/readme-images/am_i_responsive.png)
+The [link](https://cherry-leaf-powdery-mildew-7270464476a9.herokuapp.com/) to the live project
+<br>
+This is a Machine Learning(ML) project which focuses on detecting powdery mildew on cherry leaves to determine whether a leaf is healthy or infected. This project is a result of a business request made by a fictitious company called Farmy & Foods who have an issue with powdery mildew infecting their cherry plantation. 
+
+<br>
+
+## Contents
+* [Dataset Content](#dataset-content)
+* [Business Requirements](#business-requirements)
+* [Hypothesis and Validation](#hypothesis-and-validation)
+* [Rationale for ML tasks](#rationale-for-ML-tasks)
+* [ML Business Case](#hypothesis-and-validation)
+* [Dashboard Design](#hypothesis-and-validation)
+* [Bugs](#bugs)
+* [Deployment](#deployment)
+* [Technologies Used](#technologies-used)
+* [Credits](#hypothesis-and-validation)
+* [Acknowledgements](#hypothesis-and-validation)
+
+<br>
+
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
-
-
 
 ## Business Requirements
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.

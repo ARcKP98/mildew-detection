@@ -39,4 +39,4 @@ def model_performance_metrics():
             f'business performance criteria of 97% accuracy on predictions. ')
     st.success(f'A high accuracy value and a low loss value show that the '
                f'model is performing well and can be implemented to predict '
-               f'the condition of the leaf.')
+               f'the condition of a given cherry leaf.')

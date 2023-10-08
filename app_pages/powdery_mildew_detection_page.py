@@ -20,6 +20,10 @@ def mildew_detector_body():
         f"healthy or contains powdery mildew.")
     st.write('')
     st.write('You can upload image(s) of cherry leaves below')
+    st.write(
+        f'To access images of cherry leaves, you can use [this]'
+        f'(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/data)'
+        f' Kaggle folder to download images.')
 
     images_buffer = st.file_uploader(
         'Upload your cherry leaves here:', accept_multiple_files=True,

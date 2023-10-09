@@ -8,17 +8,22 @@ This is a Machine Learning(ML) project which focuses on detecting powdery mildew
 <br>
 
 ## Contents
-* [Dataset Content](#dataset-content)
-* [Business Requirements](#business-requirements)
-* [Hypothesis and Validation](#hypothesis-and-validation)
-* [Rationale for ML tasks](#rationale-for-ML-tasks)
-* [ML Business Case](#hypothesis-and-validation)
-* [Dashboard Design](#hypothesis-and-validation)
-* [Bugs](#bugs)
-* [Deployment](#deployment)
-* [Technologies Used](#technologies-used)
-* [Credits](#hypothesis-and-validation)
-* [Acknowledgements](#hypothesis-and-validation)
+- [Powdery Mildew detector in Cherry Leaves](#powdery-mildew-detector-in-cherry-leaves)
+  - [Contents](#contents)
+  - [Dataset Content](#dataset-content)
+  - [Business Requirements](#business-requirements)
+  - [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+  - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+  - [ML Business Case](#ml-business-case)
+  - [Dashboard Design](#dashboard-design)
+  - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+  - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+  - [Acknowledgements (optional)](#acknowledgements-optional)
 
 <br>
 
@@ -37,7 +42,13 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+1. Cherry leaves that have been affected by powdery mildew will have white or gray powdery regions/spots on the surface of the leaf.
+
+Validation: An image montage of the cherry leaves can be generated to identify the differences in healthy and infected leaves.
+
+2. Cherry leaves that have been affected by powdery mildew will also have some discoloration on parts of the leaf(the stem, the edges, the center, etc.) with distorted edges.
+
+Validation: An image montage along with the average image difference of healthy and infected leaves can be used to identify the differences in the healthy and infected leaves structure and colour. 
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks

@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def hypothesis_page_body():
-    st.write('## Hypothesis')
+    st.write('## Hypotheses')
     st.write('')
     st.info(
         f"* Cherry leaves that have been affected by mildew will "

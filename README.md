@@ -52,16 +52,31 @@ Validation: An image montage along with the average image difference of healthy 
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+The first business requirement states that: *The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew*. This requirement will be satisfied by visualising the data which includes: 
+* Showing an image montage of healthy or infected leaves.
+* Showing the difference between an average healthy leaf and an average infected leaf.
+* Showing the average and variability of images for healthy and infected leaves.
 
+The second business requirement states that: *The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew*. This requirement will be satisfied by:
+* Allowing the user to add images to the dashboard which predict whether the image(s) is healthy leaf or an infected leaf.
+* Allow the user to generate report based on the predictions.
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* The client is interested in having a tool that can be used to detect whether a given cherry leaf is healthy or infected with powdery mildew. 
+* This will save client a lot of time as examining each cherry tree takes 30 minutes plus and additional minute which is required to apply the compund to the cherry leaf if it is infected. 
+* A Binary Classification ML model will be constructed to predict whether the cherry leaf is healthy or not.
+* The client has agreed that performance goal of the predictions should be 97%.
+* The client has requested a dashboard with this functionality. 
+* The dataset will be provided by the client which will be used to train the model. 
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+The clients requirements can be implemented in the following 5 pages:
+* Project Summary
+* Project Hypothesis
+* Cherry Leaf Visualiser
+* Mildew Detector for Cherry Leaves
+* Model Performance
 
 
 ## Unfixed Bugs

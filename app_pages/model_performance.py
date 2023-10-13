@@ -6,6 +6,9 @@ from src.ml.evaluate_clf import load_test_evaluation
 
 
 def model_performance_metrics():
+    '''
+    Display the model performance
+    '''
 
     version = 'v1'
     st.write('## Train, Test, and Validation Set: Labels Frequencies')

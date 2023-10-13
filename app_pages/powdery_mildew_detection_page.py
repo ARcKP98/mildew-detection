@@ -12,6 +12,10 @@ from src.ml.predictive_analysis import (
 
 
 def mildew_detector_body():
+    '''
+    Allow the user to upload image(s) and show the predictions associated with
+    it.
+    '''
     st.write('## Powdery Mildew Detector')
     st.write('')
     st.success(

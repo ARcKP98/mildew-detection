@@ -2,6 +2,9 @@ import streamlit as st
 
 
 def hypothesis_page_body():
+    '''
+    Display the hypotheses and their validation
+    '''
     st.write('## Hypotheses')
     st.write('')
     st.info(

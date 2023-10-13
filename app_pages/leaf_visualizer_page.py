@@ -11,6 +11,11 @@ import random
 
 
 def leaf_visualizer_body():
+    '''
+    Display the option to view Difference between Average and Variability
+    image and the Difference between Average Healthy and Average Powdery Mildew
+    leaf
+    '''
 
     st.write("## Cherry Leaf Visualiser")
     st.write('')
@@ -68,6 +73,9 @@ def leaf_visualizer_body():
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
+    '''
+    Generates an image montage based on label_to_display selected by the user
+    '''
 
     labels = os.listdir(dir_path)
     if label_to_display in labels:

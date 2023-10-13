@@ -2,6 +2,9 @@ import streamlit as st
 
 
 def summary_page_body():
+    '''
+    Display the project summary
+    '''
 
     st.write('## Project Summary')
     st.write('')

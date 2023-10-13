@@ -63,7 +63,7 @@ The second business requirement states that: *The client is interested in predic
 
 ## ML Business Case
 * The client is interested in having a tool that can be used to detect whether a given cherry leaf is healthy or infected with powdery mildew. 
-* This will save client a lot of time as examining each cherry tree takes 30 minutes plus and additional minute which is required to apply the compund to the cherry leaf if it is infected. 
+* This will save client a lot of time as examining each cherry tree takes 30 minutes plus and additional minute which is required to apply the compund to the cherry leaf if it is infected.
 * A Binary Classification ML model will be constructed to predict whether the cherry leaf is healthy or not.
 * The client has agreed that performance goal of the predictions should be 97%.
 * The client has requested a dashboard with this functionality. 

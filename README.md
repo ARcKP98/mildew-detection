@@ -127,7 +127,9 @@ The clients requirements can be implemented in the following 5 pages:
 
 ### Azure App Service
 
-This application can be deployed to Azure App Service. For detailed deployment instructions, see [AZURE_DEPLOYMENT.md](AZURE_DEPLOYMENT.md).
+This application can be deployed to Azure App Service. 
+- **Quick Start Guide**: [AZURE_QUICKSTART.md](AZURE_QUICKSTART.md) - Fast deployment steps
+- **Detailed Guide**: [AZURE_DEPLOYMENT.md](AZURE_DEPLOYMENT.md) - Complete instructions with troubleshooting
 
 **Quick Start:**
 1. Create an Azure App Service with Python 3.11 runtime

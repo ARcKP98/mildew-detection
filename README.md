@@ -124,6 +124,17 @@ The clients requirements can be implemented in the following 5 pages:
 * The page_icon does not appear on the website despite being in the correct format. This does not affect the functioanlity of the dashboard in any way. 
 
 ## Deployment
+
+### Azure App Service
+
+This application can be deployed to Azure App Service. For detailed deployment instructions, see [AZURE_DEPLOYMENT.md](AZURE_DEPLOYMENT.md).
+
+**Quick Start:**
+1. Create an Azure App Service with Python 3.11 runtime
+2. Set startup command to: `bash startup.sh`
+3. Deploy using GitHub Actions, Local Git, or ZIP deploy
+4. Access your app at: https://your-app-name.azurewebsites.net
+
 ### Heroku
 
 * The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
@@ -168,6 +179,7 @@ Other tools:
 - Codeanywhere: Online IDE.
 - GitHub: To store project code and files.
 - Heroku: Used to deploy the dashboard.
+- Azure App Service: Cloud platform for deploying web applications.
 
 
 ## Credits 

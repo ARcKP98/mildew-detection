@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "name": "mildew-detection",
+  "description": "Powdery Mildew Detector for Cherry Leaves - ML Application",
+  "runtime": {
+    "python": "3.11"
+  },
+  "startupCommand": "bash startup.sh",
+  "appSettings": [
+    {
+      "name": "SCM_DO_BUILD_DURING_DEPLOYMENT",
+      "value": "true"
+    },
+    {
+      "name": "WEBSITE_HTTPLOGGING_RETENTION_DAYS",
+      "value": "7"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Git
+.git
+.gitignore
+.github/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+readme-images/
+*.md
+!AZURE_DEPLOYMENT.md
+
+# Heroku specific
+Procfile
+.slugignore
+runtime.txt
+
+# Development
+.devcontainer/
+jupyter_notebooks/
+
+# Temporary files
+*.log
+*.tmp
+/tmp/

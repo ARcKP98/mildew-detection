@@ -12,8 +12,7 @@ def model_performance_metrics():
 
     version = 'v1'
     st.write('## Train, Test, and Validation Set: Labels Frequencies')
-    labels_distribution = plt.imread(
-        f"outputs/{version}/labels_distribution.png")
+    labels_distribution = f"outputs/{version}/labels_distribution.png"
     st.image(labels_distribution,
              caption='Labels on Train, Test, and Validation sets')
     st.write(f"The graph above shows that all sets are balanced as they all "

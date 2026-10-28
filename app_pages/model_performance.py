@@ -12,8 +12,7 @@ def model_performance_metrics():
 
     version = 'v1'
     st.write('## Train, Test, and Validation Set: Labels Frequencies')
-    labels_distribution = f"outputs/{version}/labels_distribution.png"
-    st.image(labels_distribution,
+    st.image("outputs/v1/labels_distribution.png",
              caption='Labels on Train, Test, and Validation sets')
     st.write(f"The graph above shows that all sets are balanced as they all "
              f"contain the same amount of healthy and infected leaves. ")

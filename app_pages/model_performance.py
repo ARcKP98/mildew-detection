@@ -36,7 +36,7 @@ def model_performance_metrics():
              f'similar path and are close to each other.')
     st.write('---')
     st.write('## Generalised Performance on Test set')
-    st.dataframe(pd.DataFrame(load_test_evaluation(version),index=['Loss', 'Accuracy'])
+    st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
     st.info(f'This model has an accuracy of 99.53% on average which meets the '
             f'business performance criteria of 97% accuracy on predictions. ')
     st.success(f'A high accuracy value and a low loss value show that the '

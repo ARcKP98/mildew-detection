@@ -13,7 +13,7 @@ def model_performance_metrics():
     version = 'v1'
     st.write('## Train, Test, and Validation Set: Labels Frequencies')
     labels_distribution = plt.imread(
-        f"outputs/{version}/labels_distribution.png") # normally, you would load the image from a local path
+        f"outputs/{version}/labels_distribution.png") # normally, you would load the image from a local path but there was an issue that I saw recently when purusing
     st.image("https://raw.githubusercontent.com/ARcKP98/mildew-detection/main/outputs/v1/labels_distribution.png",
              caption='Labels on Train, Test, and Validation sets')
     st.write(f"The graph above shows that all sets are balanced as they all "
@@ -29,7 +29,7 @@ def model_performance_metrics():
     with col2:
         model_loss = plt.imread(
             f"outputs/{version}/model_training_accuracy.png")
-        st.image("https://raw.githubusercontent.com/ARcKP98/mildew-detection/main/outputs/v1/model_training_loss.png", caption='Model Training Losses')
+        st.image("https://raw.githubusercontent.com/ARcKP98/mildew-detection/main/outputs/v1/model_training_losses.png", caption='Model Training Losses')
     st.write(f'The above graphs shows that the model has learned normally '
              f'(no overfitting or underfitting) because both loss and '
              f'accuracy plots follow a '
